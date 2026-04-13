@@ -641,7 +641,7 @@ nav a.active { background:#1a1b22; color:#fff; }
 <article class="rounded-md p-4 ability-card" style="border:1px solid #22232b">
 <div>
 <h3 class="font-semibold leading-tight text-[1.8rem]">Friar's Bond</h3>
-<div class="text-gray-400"><em>Spell<span class="meta-sep">|</span>Bonus Action<img alt="Bonus Action" class="cost-icon" src="images/bonus_action.png"/><span class="meta-sep">|</span>1 Ki Point <img alt="1 Ki Point" class="cost-icon" src="images/ki_point.png"/><span class="range-radius-line"><span class="meta-sep">|</span>Range 9 m<img alt="Range" class="cost-icon" src="images/range.png"/></span></em></div>
+<div class="text-gray-400"><em>Spell<span class="meta-sep">|</span>Bonus Action<img alt="Bonus Action" class="cost-icon" src="images/bonus_action.png"/><span class="meta-sep">|</span>1 Ki Point <img alt="1 Ki Point" class="cost-icon" src="images/ki_point.png"/><span class="range-radius-line"><span class="meta-sep">|</span>Range 12 m<img alt="Range" class="cost-icon" src="images/range.png"/></span></em></div>
 <div class="mt-3">Designate an ally as your Kin and grant a variety of blessings while they remain nearby. You and your Kin gain temporary hit points equal to your Wisdom Modifier at the start of each turn.
     <ul class="mt-2 list-disc pl-5">
 <li><strong>Duration:</strong> Concentration</li>
@@ -657,7 +657,7 @@ nav a.active { background:#1a1b22; color:#fff; }
 </div>
 <div class="mt-3 p-3 rounded" id="bondDetail" style="border:1px solid #22232b;background:rgba(0,0,0,.2);display:none"></div>
 </div>
-<div class="mt-3 p-3 rounded" style="border:1px solid #22232b;background:rgba(0,0,0,.15)"><span class="font-semibold">Friar's Grace</span><div class="text-gray-400"><em>Spell<span class="meta-sep">|</span>Bonus Action<img alt="Bonus Action" class="cost-icon" src="images/bonus_action.png"/><span class="meta-sep">|</span>1 Ki Point <img alt="1 Ki Point" class="cost-icon" src="images/ki_point.png"/><span class="range-radius-line"><span class="meta-sep">|</span>Range 9 m<img alt="Range" class="cost-icon" src="images/range.png"/></span></em></div><div class="mt-2">Teleport to an unoccupied space beside your Kin. <em>Unlocked by casting Friar's Bond.</em></div></div></div>
+<div class="mt-3 p-3 rounded" style="border:1px solid #22232b;background:rgba(0,0,0,.15)"><span class="font-semibold">Friar's Grace</span><div class="text-gray-400"><em>Spell<span class="meta-sep">|</span>Bonus Action<img alt="Bonus Action" class="cost-icon" src="images/bonus_action.png"/><span class="meta-sep">|</span><span class="meta-sep">|</span>Range 9 m<img alt="Range" class="cost-icon" src="images/range.png"/></span></em></div><div class="mt-2">Teleport to an unoccupied space beside your Kin. Range increases as your Wisdom grows. <em>Unlocked by casting Friar's Bond.</em></div></div></div>
 <div class="card-icon">
 <img alt="Friar's Bond icon" class="object-contain" src="images/friar_bond.png"/>
 </div>
@@ -707,8 +707,8 @@ nav a.active { background:#1a1b22; color:#fff; }
 <article class="rounded-md p-4 ability-card" style="border:1px solid #22232b">
 <div>
 <h3 class="font-semibold leading-tight text-[1.8rem]">Pacifying Sweep</h3>
-<div class="text-gray-400"><em>Melee Attack<img alt="Melee" class="cost-icon" src="images/melee.png"/><span class="meta-sep">|</span>Action<img alt="Action" class="cost-icon" src="images/action.png"/><span class="meta-sep">|</span>2 Ki Points <img alt="Ki Points" class="cost-icon" src="images/ki_point.png"/><span class="meta-sep">|</span>Strength/Wisdom Save</em></div>
-<div class="mt-3">Sweep your staff in a wide arc, striking all foes within and knocking them back 3m on a failed Strength save. On a failed Wisdom save, they become Pacified until the end of their next turn and are unable to take actions unless damaged.</div>
+<div class="text-gray-400"><em>Melee Attack<img alt="Melee" class="cost-icon" src="images/melee.png"/><span class="meta-sep">|</span>Action<img alt="Action" class="cost-icon" src="images/action.png"/><span class="meta-sep">|</span>2 Ki Points <img alt="Ki Points" class="cost-icon" src="images/ki_point.png"/><span class="meta-sep">|</span>Wisdom Save</em></div>
+<div class="mt-3">Sweep your staff in a wide arc, striking all foes within and knocking them back 3m. On a failed Wisdom save, they become Pacified for 2 turns and are unable to take actions unless damaged.</div>
 </div>
 <div class="card-icon">
 <img alt="Guiding Strike icon" class="object-contain" src="images/pacifying_sweep.png"/>
@@ -1462,12 +1462,24 @@ nav a.active { background:#1a1b22; color:#fff; }
       <div class="p-4 space-y-6">
         <article class="rounded-md p-4 ability-card" style="border:1px solid #22232b">
           <div>
-            <h3 class="font-semibold leading-tight text-[1.8rem]">Radiant Arsenal</h3>
+            <h3 class="font-semibold leading-tight text-[1.8rem]">Herald of the Sun: Radiant</h3>
             <div class="text-gray-400"><em>Passive Toggle</em></div>
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Radiant Arsenal icon" class="object-contain" src="images/radiant_arsenal.png" style="width:112px;height:112px"/>
             </div>
             <div class="mt-3">Bless your weapon(s), causing your weapon attacks to deal Radiant damage and illuminate targets with a radiant glow.</div>
+          </div>
+          <div class="card-icon">
+            <img alt="Radiant Arsenal icon" class="object-contain" src="images/radiant_arsenal.png"/>
+          </div>
+        </article>    <article class="rounded-md p-4 ability-card" style="border:1px solid #22232b">
+          <div>
+            <h3 class="font-semibold leading-tight text-[1.8rem]">Herald of the Sun: Fire</h3>
+            <div class="text-gray-400"><em>Passive Toggle</em></div>
+            <div class="lg:hidden flex justify-center mt-3">
+              <img alt="Flame Arsenal icon" class="object-contain" src="images/DT_FlameArsenal.png" style="width:112px;height:112px"/>
+            </div>
+            <div class="mt-3">Bless your weapon(s), causing your weapon attacks to deal Fire damage and inflict Burning on hit.</div>
           </div>
           <div class="card-icon">
             <img alt="Radiant Arsenal icon" class="object-contain" src="images/radiant_arsenal.png"/>
@@ -1516,7 +1528,7 @@ nav a.active { background:#1a1b22; color:#fff; }
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Valkyrie icon" class="object-contain" src="images/valkyrie.png" style="width:112px;height:112px"/>
             </div>
-            <div class="mt-3">Soar through the air on wings of light, ignoring attacks of opportunity. When you land, you gain an Extra Attack.</div>
+            <div class="mt-3">Soar through the air on wings of light, ignoring attacks of opportunity. When you land, you gain an Extra Attack. If you land within 2m of an enemy, attacks against you have <strong>Disadvantage</strong> until the start of your next turn.</div>
             <div class="mt-3">The distance of your leap scales with your Wisdom modifier.</div>
           </div>
           <div class="card-icon">
@@ -1557,7 +1569,7 @@ nav a.active { background:#1a1b22; color:#fff; }
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Pursuit of Valor icon" class="object-contain" src="images/pursuit_of_valor.png" style="width:112px;height:112px"/>
             </div>
-            <div class="mt-3">When you attack a creature affected by <strong>Hunter's Mark</strong>, you gain 3&nbsp;m of movement and <strong>Blur</strong> until the start of your next turn.</div>
+            <div class="mt-3">When you landing the killing blow on a creature affected by <strong>Hunter's Mark</strong>, you can use <strong>Valkyrie</strong> as a free action.</div>
           </div>
           <div class="card-icon">
             <img alt="Pursuit of Valor icon" class="object-contain" src="images/pursuit_of_valor.png"/>
