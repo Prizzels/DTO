@@ -2351,11 +2351,11 @@ nav a.active { background:#1a1b22; color:#fff; }
         <article class="rounded-md p-4 ability-card" style="border:1px solid #22232b">
           <div>
             <h3 class="font-semibold leading-tight text-[1.8rem]">Epidemic</h3>
-            <div class="text-gray-400"><em>2 Sorcery Points<img alt="3 Sorcery Points" class="cost-icon" src="images/sorcery_point.png"/><span class="meta-sep">|</span>Radius 6 m<img alt="Radius" class="cost-icon" src="images/aoe.png"/></em></div>
+            <div class="text-gray-400"><em>Passive Toggle<span class="meta-sep">|</span>1 Sorcery Points<img alt="3 Sorcery Points" class="cost-icon" src="images/sorcery_point.png"/><span class="meta-sep">|</span>Radius 6 m<img alt="Radius" class="cost-icon" src="images/aoe.png"/></em></div>
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Death Nova icon" class="object-contain" src="images/death_nova.png" style="width:112px;height:112px"/>
             </div>
-            <div class="mt-3">When a creature cursed with <strong>Wither</strong> or <strong>Decay</strong> dies, you can use 2 Sorcery Points to trigger a death nova, dealing 6d6 necrotic damage that cannot be reduced or resisted, half on a Constitution save. Epidemic spreads <strong>Wither</strong> and <strong>Decay</strong> to any foes within its effect. Allies always save against this spell.</div>
+            <div class="mt-3">When a creature cursed with <strong>Wither</strong> or <strong>Decay</strong> dies, it detonates an Epidemic nova, dealing 3d6 necrotic damage that cannot be reduced or resisted. Epidemic spreads <strong>Wither</strong> and <strong>Decay</strong> to any foes within its effect. Allies take half damage from this spell.</div>
           </div>
           <div class="card-icon">
             <img alt="Death Nova icon" class="object-contain" src="images/death_nova.png"/>
@@ -3482,7 +3482,7 @@ showClass(initKey, true);
     bless: "<b>Friar's Blessing:</b> Gain +1d4 to your Attack Rolls and Saving Throws.",
     valor: "<b>Friar's Valor:</b> Deal an additional 1d4 radiant damage on weapon attacks.",
     retribution: "<b>Friar's Retribution:</b> Deal twice your Wisdom Modifier radiant damage in retaliation to any attack.",
-    faith: "<b>Friar's Faith:</b> Gain +1 AC.",
+    faith: "<b>Friar's Faith:</b> Gain +1 AC and Resistance to Psychic, Necrotic and Radiant damage while you have temporary hitpoints.",
   };
   const row = document.getElementById('bondRow');
   const detail = document.getElementById('bondDetail');
