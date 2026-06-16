@@ -514,6 +514,51 @@ nav a.active { background:#1a1b22; color:#fff; }
           style="border:1px solid #22232b;background:rgba(0,0,0,.15);min-height:120px">
 
           <div class="text-sm leading-relaxed divide-y divide-white/5">
+			  ```html
+<!-- 1.2.0.65 -->
+<section class="py-6">
+  <h3 class="text-lg font-semibold text-white tracking-wide mb-2">1.2.0.65</h3>
+  <ul class="list-disc pl-5 space-y-1 text-gray-300">
+    <li><strong>(Dawnstrider)</strong> Fixed several Zeal interactions that were granting additional stacks incorrectly.</li>
+    <li><strong>(Dawnstrider)</strong> Swapped Zeal and Valkyrie in the subclass progression. This avoids encouraging Zeal as a universal martial dip while making Valkyrie available earlier as the more interesting multiclass option. Win/win.</li>
+
+    <li><strong>(Dream)</strong> Mind Sliver from either supported spell mod should now benefit from Potent Spellcasting.</li>
+    <li><strong>(Dream)</strong> Deep Slumber now affects every target within its area of effect. Upcasting now increases the duration of Torpor.</li>
+
+    <li><strong>(Friar)</strong> Fixed Pacifying Sweep cancelling its own effects.</li>
+    <li><strong>(Friar)</strong> Friar's Retribution now functions correctly and scales with the Monk's Wisdom modifier. This powerful ability was broken for far too long—let's see those Retaliation builds.</li>
+    <li><strong>(Friar)</strong> Fixed Friar's Grace incorrectly appearing on Bonded allies.</li>
+
+    <li><strong>(Psyker)</strong> Restored level 8 spell progression.</li>
+    <li><strong>(Psyker)</strong> Added new late-game Perils consequences. AdvancedTT Spells is required for some of them to appear.</li>
+    <li><strong>(Psyker)</strong> Gellar's Field now also grants Resistance to Psychic damage and Advantage on mental saving throws.</li>
+
+    <li><strong>(Seeker)</strong> Arcane Bolts are now correctly flagged as spells. Have fun!</li>
+    <li><strong>(Seeker)</strong> Corrected the Arcane Bolts tooltip to state that the bolts can pierce magical Shields, rather than implying that they are guaranteed to hit.</li>
+
+    <li><strong>(Wretched Soul)</strong> Metamagic: Vile Affliction now grants its piercing effects for 10 turns after casting and costs 2 Sorcery Points.</li>
+    <li><strong>(Wretched Soul)</strong> Wither and Decay should no longer affect objects or items.</li>
+  </ul>
+</section>
+			  
+			<!-- 1.2.0.62 --> <section class="py-6"> 
+				<h3 class="text-lg font-semibold text-white tracking-wide mb-2">1.2.0.61</h3> 
+				<ul class="list-disc pl-5 space-y-1 text-gray-300"> 
+					<li><strong>(General)</strong> Added new subclass icon artwork. This remains a work in progress as the icons are brought up to the visual standard of the mod. Thanks to Misoru for their contributions!</li> 
+					<li><strong>(Dawnstrider)</strong> Added Herald of the Sun, a new level 3 feature with two toggleable passives: Radiant weapons illuminate targets on hit, while Fire weapons inflict Burning on hit.</li> 
+					<li><strong>(Dawnstrider)</strong> Landing Valkyrie within 2m of a foe now causes attack rolls against you to have Disadvantage until the start of your next turn.</li> 
+					<li><strong>(Dawnstrider)</strong> Pursuit of Valor now grants a free cast of Valkyrie when you kill a Marked creature.</li> 
+					<li><strong>(Dawnstrider)</strong> Arrows that hit multiple targets now generate one stack of Zeal per target hit, regardless of weapon type.</li> 
+					<li><strong>(Dawnstrider)</strong> Reduced bonus spells to one per spell rank and revised the list to Divine Favor, Aid, Daylight, Wall of Fire, and Dawn.</li> 
+					<li><strong>(Dream)</strong> Channel Divinity: Inception now also works against Intelligence saving throws.</li> 
+					<li><strong>(Friar)</strong> Increased the range of Friar's Bond and all associated abilities to 12m.</li> 
+					<li><strong>(Friar)</strong> Friar's Grace no longer costs Ki, and its range now scales with Wisdom.</li> 
+					<li><strong>(Friar)</strong> Pacifying Sweep's knockback now triggers on hit instead of requiring a failed Strength saving throw. Placate also lasts one additional turn.</li> 
+					<li><strong>(Illumination)</strong> Removed the body glow from Aura of Brilliance and reduced the intensity of its ground effect.</li> 
+					<li><strong>(Revenant)</strong> Spellcasting is now disabled while Revenant's Rage is active. Activating Revenant's Rage no longer breaks concentration.</li> 
+					<li><strong>(Wretched Soul)</strong> Redesigned Epidemic as a toggleable passive. Each activation deals 3d6 damage and costs 1 Sorcery Point, while Decay and Wither now detonate independently. Enjoy the fireworks.</li> 
+				</ul> 
+			</section>
 
     		 <!-- 1.2.0.60 -->
             <section class="py-6">
@@ -1034,7 +1079,7 @@ nav a.active { background:#1a1b22; color:#fff; }
 <div>
 <h3 class="font-semibold leading-tight text-[1.8rem]">Gellar's Field</h3>
 <div class="text-gray-400"><em>Spell<span class="meta-sep">|</span>Bonus Action<img alt="Bonus Action" class="cost-icon" src="images/bonus_action.png"/><span class="meta-sep">|</span>Once per Short Rest</em></div>
-<div class="mt-3">Create a protective field that negates Perils of the Warp and grants immunity against Perils returning for 2 turns.</div>
+<div class="mt-3">Create a protective field that negates Perils of the Warp and grants immunity against Perils returning for 2 turns. While the field holds, you have Resistance to Psychic damage and Advantage on mental saves.</div>
 <div class="mt-3 p-3 rounded" style="border:1px solid #22232b;background:rgba(0,0,0,.15)">If Gellar's Field triggers in response to Perils of the Warp, it does not consume your charge.</div>
 </div>
 <div class="card-icon">
@@ -1630,7 +1675,7 @@ nav a.active { background:#1a1b22; color:#fff; }
             </div>
             <div class="mt-3">Put creatures into a deep slumber until the end of their next turn. Upon waking, they are afflicted with <strong>Torpor</strong> for 1 turn. Creatures immune to Sleep are immediately affected by Torpor instead.</div>
             <div class="mt-3 p-3 rounded" style="border:1px solid #22232b;background:rgba(0,0,0,.15)"><span class="font-semibold">Torpor:</span> In a dreamlike state. Movement reduced to ¼, cannot take reactions and can only perform a single attack, action or bonus action. Taking damage shakes off the effect.</div>
-            <div class="mt-3 p-3 rounded" style="border:1px solid #22232b;background:rgba(0,0,0,.15)"><span class="font-semibold">Upcast:</span> Increase the duration of Torpor by 1 turn and affect one additional target.</div>
+            <div class="mt-3 p-3 rounded" style="border:1px solid #22232b;background:rgba(0,0,0,.15)"><span class="font-semibold">Upcast:</span> Increase the duration of Torpor by 1 turn.</div>
           </div>
           <div class="card-icon">
             <img alt="Deep Slumber icon" class="object-contain" src="images/deep_slumber.png"/>
@@ -2327,7 +2372,7 @@ nav a.active { background:#1a1b22; color:#fff; }
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Vile Afflictions icon" class="object-contain" src="images/vile_afflictions.png" style="width:112px;height:112px"/>
             </div>
-            <div class="mt-3">You can spend 1 Sorcery Point to make your next Poison spell pierce Resistance and Immunity. <br><br>Add your Charisma modifier when you deal damage with <strong>Wither</strong> or <strong>Decay</strong>.</div>
+            <div class="mt-3">You can spend 2 Sorcery Point to make your next Poison spell pierce Resistance and Immunity. After casting, you retain the piercing effect for 10 turns. <br><br>Add your Charisma modifier when you deal damage with <strong>Wither</strong> or <strong>Decay</strong>.</div>
           </div>
           <div class="card-icon">
             <img alt="Vile Afflictions icon" class="object-contain" src="images/vile_afflictions.png"/>
@@ -2470,7 +2515,7 @@ nav a.active { background:#1a1b22; color:#fff; }
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Arcane Bolts icon" class="object-contain" src="images/arcane_bolts.png" style="width:112px;height:112px"/>
             </div>
-            <div class="mt-3">Fire 3 bolts of arcane energy, each dealing 1d4+1 Force damage. These bolts always hit targets protected by <strong>Shield</strong>. Damage dice increases by one step at level 7 and 13.</div>
+            <div class="mt-3">Fire 3 bolts of arcane energy, each dealing 1d4+1 Force damage. These bolts can hit targets protected by <strong>Shield</strong>. Damage dice increases by one step at level 7 and 13.</div>
           </div>
           <div class="card-icon">
             <img alt="Arcane Bolts icon" class="object-contain" src="images/arcane_bolts.png"/>
@@ -2483,7 +2528,7 @@ nav a.active { background:#1a1b22; color:#fff; }
             <div class="lg:hidden flex justify-center mt-3">
               <img alt="Arcane Bolts icon" class="object-contain" src="images/arcane_bolts.png" style="width:112px;height:112px"/>
             </div>
-            <div class="mt-3">Fire 3 bolts of arcane energy, each dealing 1d4+1 Force damage. These bolts always hit targets protected by <strong>Shield</strong>. Damage dice increases by one step at level 7 and 13.</div>
+            <div class="mt-3">Fire 3 bolts of arcane energy, each dealing 1d4+1 Force damage. These bolts can hit targets protected by <strong>Shield</strong>. Damage dice increases by one step at level 7 and 13.</div>
           </div>
           <div class="card-icon">
             <img alt="Arcane Bolts icon" class="object-contain" src="images/arcane_bolts.png"/>
